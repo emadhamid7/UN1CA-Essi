@@ -79,15 +79,3 @@ else
     ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib/vendor.samsung.hardware.security.engmode@1.0.so" 0 0 644 "u:object_r:system_lib_file:s0"
     ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib64/vendor.samsung.hardware.security.engmode@1.0.so" 0 0 644 "u:object_r:system_lib_file:s0"
 fi
-
-echo "Replace ril libs"
-DELETE_FROM_WORK_DIR "system" "system/lib/libsecril-client.so"
-DELETE_FROM_WORK_DIR "system" "system/lib64/libbrillo.so"
-DELETE_FROM_WORK_DIR "system" "system/lib64/libsecril-client.so"
-DELETE_FROM_WORK_DIR "system" "system/lib64/libbrillo-binder.so"
-DELETE_FROM_WORK_DIR "system" "system/lib64/libbrillo-stream.so"
-ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib/libsecril-client.so" 0 0 644 "u:object_r:system_lib_file:s0"
-ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib64/libbrillo.so" 0 0 644 "u:object_r:system_lib_file:s0"
-ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib64/libsecril-client.so" 0 0 644 "u:object_r:system_lib_file:s0"
-ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib64/libbrillo-binder.so" 0 0 644 "u:object_r:system_lib_file:s0"
-ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib64/libbrillo-stream.so" 0 0 644 "u:object_r:system_lib_file:s0"
