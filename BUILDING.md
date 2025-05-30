@@ -15,8 +15,8 @@
 - (If building in VM, optional) Active filesystem access to the build system in case you want to transfer files elsewhere without relying on internet connection.
 - [Last **One UI 6.1.1** firmware from **Galaxy S23 FE Europe** (SM-S711B/EUX)](https://samfw.com/firmware/SM-S711B/EUX/S711BXXS6DYBH).
 - Last **One UI 6.1** firmware from your respective device.
-  - Galaxy A53 5G Europe (SM-A536B/EUX) last got One UI 6.1 so there's no need to exclusively gather this outside of the build process.
-  - Galaxy A25 Egypt (SM-A256E/EGY) [A256EXXS7BYC4/A256EOJM7BYC4/A256EXXS7BYC4](https://samfw.com/firmware/SM-A256E/EGY/A256EXXS7BYC4)
+  - Galaxy A53 5G Europe (SM-A536B/EUX): [A536BXXSEEYD9/A536BOXMEEYD9/A536BXXSEEYD9](https://samfw.com/firmware/SM-A536B/EUX/A536BXXSEEYD9)
+  - Galaxy A25 Egypt (SM-A256E/EGY): [A256EXXS7BYC4/A256EOJM7BYC4/A256EXXS7BYC4](https://samfw.com/firmware/SM-A256E/EGY/A256EXXS7BYC4)
   - Galaxy M34 5G India (SM-M346B/INS): [M346BXXS7CYB2/M346BODM7CYB2/M346BXXS7CYB2](https://samfw.com/firmware/SM-M346B/INS/M346BXXS7CYB2)
   - Galaxy A33 5G
     - SM-A336E/INS last got One UI 6.1 so there's no need to exclusively gather this outside of the build process.
