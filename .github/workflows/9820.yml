@@ -1,4 +1,4 @@
- name: Build
+name: Build
 
 on:
   workflow_dispatch:
@@ -39,19 +39,19 @@ jobs:
           node-version: 'latest'
 
       - name: Build dependencies
-        run: source ./buildenv.sh ${{ github.event.inputs.target }}
+        run: source ./buildenv.sh ${{ matrix.target }}
 
       - name: Get stock firmwares
         run: |
-          source ./buildenv.sh ${{ github.event.inputs.target }}
+          source ./buildenv.sh ${{ matrix.target }}
           mkdir -p out/fw
           cp -fa /mnt/repos/un1ca-essi/out/fw/SM-S711B out/fw
           DEVICE=$(echo -n "$TARGET_FIRMWARE" | cut -d "/" -f 1)
-          cp -fa /mnt/repos/un1ca-essi/out/fw/${{ DEVICE out/fw
+          cp -fa "/mnt/repos/un1ca-essi/out/fw/${DEVICE}" out/fw
 
       - name: Build ROM
         run: |
-          source ./buildenv.sh ${{ github.event.inputs.target }}
+          source ./buildenv.sh ${{ matrix.target }}
           ./scripts/make_rom.sh
 
       - name: Get ROM
