@@ -1,17 +1,15 @@
-name: 9820
-
+ name: Build
 
 on:
   workflow_dispatch:
-    inputs:
-      target:
-        description: 'Enter the target device'
-        required: true
-        default: 's5e8825 a53x'
+  pull_request:
+  push:
+    branches:
+      - 'fourteen'
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     strategy:
       fail-fast: false
